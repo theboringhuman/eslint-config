@@ -1,6 +1,6 @@
 {
   "name": "@theboringhuman/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@theboringhuman sharable ESLint config",
   "author": "rawat-shashank",
   "repository": "https://github.com/theboringhuman/eslint-config/",
