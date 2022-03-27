@@ -1,0 +1,53 @@
+{
+  "name": "@theboringhuman/eslint-config",
+  "version": "0.0.0",
+  "description": "@theBoringHuman sharable ESLint config",
+  "author": "rawat-shashank",
+  "repository": "https://github.com/theBoringHuman/eslint-config/",
+  "bugs": {
+    "url": "https://github.com/theBoringHuman/eslint-config/issues"
+  },
+  "main": "index.js",
+  "files": [
+    "plugins",
+    "rules"
+  ],
+  "scripts": {
+    "format": "prettier-package-json --write",
+    "lint": "eslint index.js plugins/*.js rules/*.js",
+    "lint:fix": "eslint --fix index.js plugins/*.js rules/*.js",
+    "prepare": "husky install",
+    "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
+    "test": "npm run lint && npm run format && git diff --quiet"
+  },
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.15.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.17.0",
+    "@typescript-eslint/eslint-plugin": "5.12.0",
+    "@typescript-eslint/parser": "5.12.0",
+    "eslint": "8.9.0",
+    "eslint-plugin-jest": "26.1.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-notice": "0.9.10",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "husky": "7.0.4",
+    "jest": "27.5.1",
+    "prettier-package-json": "2.6.3",
+    "react": "17.0.2",
+    "standard-version": "9.3.2",
+    "typescript": "4.5.5"
+  },
+  "keywords": [
+    "@theBoringHuman",
+    "eslint"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
